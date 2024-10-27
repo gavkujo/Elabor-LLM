@@ -14,7 +14,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def request(
     prompt: str,
-    engine='davinci',
+    engine='davinci-002',
     max_tokens=60,
     temperature=1.0,
     top_p=1.0,
