@@ -610,7 +610,7 @@ def main():
     parser.add_argument('--task', type=str, default='obqa', choices=['obqa', 'csqa', 'csqa2', 'qasc'])
     parser.add_argument('--model-type-kg', type=str, default='gpt2-large')
     parser.add_argument('--model-type-inf', type=str, default='t5-large')
-    parser.add_argument('--train-path', type=str, default='data/obqa/knowledge_gpt3.train.obqa.json')
+    parser.add_argument('--train-path', type=str, default='data/obqa/train.obqa.json')
     parser.add_argument('--test-path', type=str, default='data/obqa/dev.obqa.json')
     parser.add_argument('--aggfunc', type=str, default='best_prob', choices=['best_score', 'best_prob'])
     parser.add_argument('--num-knowledge', type=int, default=20)
