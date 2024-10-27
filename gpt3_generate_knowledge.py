@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 def request(
     prompt: str,
