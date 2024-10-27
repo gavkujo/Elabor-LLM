@@ -8,8 +8,9 @@ import click
 from pathlib import Path
 from typing import List
 import openai
+import os
 
-openai.api_key = "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"
+openai.api_key = "OPENAI_API_KEY"
 
 def request(
     prompt: str,
