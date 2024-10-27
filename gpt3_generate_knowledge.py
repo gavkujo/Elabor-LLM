@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import List
 import openai
 
+openai.api_key = "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"
+
 def request(
     prompt: str,
     engine='davinci',
