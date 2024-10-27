@@ -616,8 +616,11 @@ def main():
     parser.add_argument('--num-knowledge', type=int, default=20)
     parser.add_argument('--topk', type=int, default=3)
     args = parser.parse_args()
-    args.output_path = f'data/{args.task}/inference/inference_{args.model_type_inf.split("/")[-1]}.{args.train_path.split("/")[-1]}'
-    args.result_path = f'result/{args.task}/result_{args.model_type_inf.split("/")[-1]}.txt'
+    #args.output_path = f'data/{args.task}/inference/inference_{args.model_type_inf.split("/")[-1]}.{args.train_path.split("/")[-1]}'
+    #args.result_path = f'result/{args.task}/result_{args.model_type_inf.split("/")[-1]}.txt'
+    args.output_path = f'inference_{args.model_type_inf.split("/")[-1]}.{args.train_path.split("/")[-1]}'
+    args.result_path = f'result_{args.model_type_inf.split("/")[-1]}.txt'
+
 
     model_params = {
     "TRAIN_BATCH_SIZE": 5,  # batch size within each alternative training loop
